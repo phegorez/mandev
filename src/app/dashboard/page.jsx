@@ -78,6 +78,10 @@ const DashboardPage = () => {
                 })
             });
             mutate()
+            e.target[0].value = ''
+            e.target[1].value = ''
+            setIsUploadImage(false)
+            e.target[3].value = ''
         } catch (err) {
             console.log(err)
         }
